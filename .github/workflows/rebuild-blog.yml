@@ -1,0 +1,34 @@
+name: إعادة بناء المدونة
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/**"
+      - "build-blog.mjs"
+      - "lib/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build blog pages
+        run: node build-blog.mjs
+
+      - name: Commit generated files
+        run: |
+          git config user.name "eslamtgd-blog-bot"
+          git config user.email "blog-bot@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "لا يوجد تغيير"
+          else
+            git commit -m "تحديث المدونة تلقائياً"
+            git push
+          fi
