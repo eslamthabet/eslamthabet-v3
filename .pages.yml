@@ -1,5 +1,7 @@
 # Pages CMS — لوحة تحكم المقالات لموقع eslamtgd
-# المقالات ملفات ماركداون في content/blog — أي حفظ هنا يشغّل GitHub Action يعيد بناء المدونة تلقائياً.
+# اكتب ٣ حاجات بس: عنوان المقال + القسم + نص المقال.
+# كل الباقي (الرابط، التاريخ، التاريخ بالعربي، مدة القراءة، المقدمة، وصف جوجل، صورة الغلاف)
+# بيتعمل تلقائياً وقت النشر. أي حفظ هنا يشغّل GitHub Action يعيد بناء المدونة تلقائياً.
 
 media:
   input: assets/blog
@@ -10,21 +12,14 @@ content:
     label: 📝 مقالات المدونة
     type: collection
     path: content/blog
-    filename: "{primary}.md"
+    filename: "{title}.md"
     view:
-      fields: [title, category, date]
-      primary: slug
-      sort: [order, date]
-      default:
-        sort: order
-        order: asc
+      fields: [title, category]
+      primary: title
     fields:
-      - name: slug
-        label: الرابط المختصر (إنجليزي، حروف صغيرة وشرطات بدون مسافات)
+      - name: title
+        label: عنوان المقال
         type: string
-      - name: order
-        label: الترتيب داخل المدونة (رقم)
-        type: number
       - name: category
         label: القسم
         type: select
@@ -36,30 +31,6 @@ content:
             - { name: tech, label: تقنية وأخبار التكنولوجيا }
             - { name: tutorials, label: شروحات وتقنيات صناعة المحتوى }
             - { name: income, label: الربح والعمل الحر بالـ AI }
-      - name: title
-        label: عنوان المقال
-        type: string
-      - name: excerpt
-        label: المقدمة المختصرة (سطرين تحت العنوان)
-        type: text
-      - name: metaDesc
-        label: وصف البحث في جوجل (Meta Description)
-        type: text
-      - name: date
-        label: تاريخ النشر
-        type: date
-      - name: dateAr
-        label: "التاريخ بالعربي (مثال: ٢٥ نوفمبر ٢٠٢٦)"
-        type: string
-      - name: readTime
-        label: "مدة القراءة (مثال: ٥ دقائق قراءة)"
-        type: string
-      - name: image
-        label: رابط صورة الغلاف
-        type: string
-      - name: promptText
-        label: برومبت جاهز للنسخ (اختياري - اتركه فاضي لو مش موجود)
-        type: text
       - name: body
-        label: نص المقال (عنوان قسم جديد = Heading 2، والاقتباس > يتحول لصندوق نصيحة)
+        label: "نص المقال (عنوان قسم جديد = Heading 2، والاقتباس > يتحول لصندوق نصيحة)"
         type: rich-text
