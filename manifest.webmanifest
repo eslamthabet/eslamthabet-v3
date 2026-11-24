@@ -1,0 +1,11 @@
+{
+  "name": "Eslam Thabet | AI Creative Studio (eslamtgd)",
+  "short_name": "eslamtgd",
+  "description": "إسلام ثابت — مخرج وصانع أفلام وإعلانات بالذكاء الاصطناعي",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070709",
+  "theme_color": "#c8f53e",
+  "lang": "ar",
+  "dir": "rtl"
+}

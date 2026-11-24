@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://eslamtgd.top/sitemap.xml

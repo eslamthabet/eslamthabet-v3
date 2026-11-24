@@ -1,0 +1,375 @@
+/* ==========================================================================
+   ESLAMTGD TECH & AI MAGAZINE (/blog/) — EDITORIAL & ADSENSE-OPTIMIZED CSS
+   ========================================================================== */
+
+.blog-subnav {
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 10px 0;
+  position: relative;
+  z-index: 90;
+}
+
+.blog-subnav-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 2px;
+}
+
+.blog-subnav-list::-webkit-scrollbar {
+  display: none;
+}
+
+.cat-pill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 15px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.cat-pill-link:hover,
+.cat-pill-link.active {
+  background: var(--accent);
+  color: var(--text-on-accent);
+  border-color: var(--accent);
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.breadcrumbs a:hover {
+  color: var(--accent);
+}
+
+/* Magazine Layout: Content + Sticky AdSense/Categories Sidebar */
+.mag-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  gap: 36px;
+  align-items: start;
+}
+
+.mag-sidebar {
+  position: sticky;
+  top: 104px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.sidebar-widget {
+  padding: 24px;
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+}
+
+.sidebar-widget h3 {
+  font-size: 1.08rem;
+  font-weight: 900;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.sidebar-cat-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-cat-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-elevated);
+  border: 1px solid transparent;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+
+.sidebar-cat-list a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+[data-theme="light"] .sidebar-cat-list a:hover {
+  color: #5b7c00;
+}
+
+/* Featured Hero Post on /blog/ */
+.featured-post-banner {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 28px;
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border-strong);
+  margin-bottom: 36px;
+  align-items: center;
+}
+
+.featured-post-thumb {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background: #0d0f14;
+}
+
+.featured-post-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Standalone Article Typography (SEO & High Time-on-Page) */
+.article-shell {
+  padding: 36px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+}
+
+.article-header-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.article-h1 {
+  font-size: clamp(1.75rem, 3.2vw, 2.55rem);
+  font-weight: 900;
+  line-height: 1.28;
+  margin-bottom: 18px;
+}
+
+.article-hero-img {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  margin: 22px 0 28px;
+  border: 1px solid var(--border-subtle);
+}
+
+.article-hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.toc-box {
+  padding: 20px 24px;
+  border-radius: var(--radius-md);
+  background: var(--bg-elevated);
+  border-inline-start: 4px solid var(--accent);
+  margin-bottom: 28px;
+}
+
+.toc-box strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.98rem;
+}
+
+.toc-box ol {
+  padding-inline-start: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.toc-box a:hover {
+  color: var(--accent);
+}
+
+.article-content {
+  font-size: 1.08rem;
+  line-height: 1.95;
+  color: var(--text-primary);
+}
+
+.article-content h2 {
+  font-size: 1.48rem;
+  font-weight: 900;
+  margin: 34px 0 14px;
+  color: var(--text-primary);
+}
+
+.article-content h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 24px 0 10px;
+}
+
+.article-content p {
+  margin-bottom: 18px;
+  color: var(--text-secondary);
+}
+
+.article-content ul {
+  padding-inline-start: 22px;
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--text-secondary);
+}
+
+.article-tip-box {
+  padding: 18px 22px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  border: 1px solid var(--border-accent);
+  margin: 24px 0;
+  font-size: 0.98rem;
+}
+
+/* Author Box & Share Row */
+.author-card {
+  margin-top: 38px;
+  padding: 24px;
+  border-radius: var(--radius-md);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.author-card img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+  flex-shrink: 0;
+}
+
+.share-bar {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Google AdSense Slot Containers
+   Hidden cleanly until ADSENSE_ACTIVE = true or ?preview_ads=1 */
+.ad-slot {
+  display: none;
+  margin: 26px 0;
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-elevated);
+  border: 1px dashed var(--border-strong);
+  text-align: center;
+  min-height: 96px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ad-slot.ad-visible {
+  display: flex;
+}
+
+.ad-slot-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Legal & Policy Pages */
+.legal-card {
+  max-width: 900px;
+  margin-inline: auto;
+  padding: 42px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+}
+
+.legal-card h1 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.legal-card h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 28px 0 10px;
+  color: var(--accent);
+}
+
+[data-theme="light"] .legal-card h2 {
+  color: #5b7c00;
+}
+
+.legal-card p,
+.legal-card li {
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 12px;
+}
+
+.legal-card ul {
+  padding-inline-start: 22px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 1040px) {
+  .mag-layout,
+  .featured-post-banner {
+    grid-template-columns: 1fr;
+  }
+  .mag-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 680px) {
+  .article-shell,
+  .legal-card {
+    padding: 22px 18px;
+  }
+  .author-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
