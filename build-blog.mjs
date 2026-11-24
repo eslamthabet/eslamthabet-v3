@@ -108,10 +108,22 @@ function renderHeader(relRoot, activeSlug = "") {
   </div>`;
 }
 
+function byNewest(arr) {
+  // الأحدث أولاً حسب التاريخ، وعند التساوي حسب الترتيب
+  return [...arr].sort((a, b) => String(b.date).localeCompare(String(a.date)) || (a.order - b.order));
+}
+
 function renderSidebar(relRoot) {
   return `
   <aside class="mag-sidebar">
     <div class="ad-slot" data-ad-position="SIDEBAR_RECTANGLE"></div>
+
+    <div class="sidebar-widget">
+      <h3>أحدث المقالات</h3>
+      <ul class="sidebar-cat-list">
+        ${byNewest(ARTICLES).slice(0, 5).map((a) => `<li><a href="${relRoot}blog/${a.category}/${a.slug}/"><span>${a.title}</span><span>←</span></a></li>`).join("")}
+      </ul>
+    </div>
 
     <div class="sidebar-widget">
       <h3>أقسام المدونة المتخصصة</h3>
@@ -279,7 +291,7 @@ function buildBlogHome() {
       <section>
         <h2 style="font-size:1.55rem;font-weight:900;margin-bottom:22px">أحدث المقالات والشروحات المنشورة</h2>
         <div class="articles-grid" style="grid-template-columns:repeat(2,1fr)">
-          ${ARTICLES.map((a) => renderArticleCard(a, relRoot)).join("")}
+          ${byNewest(ARTICLES).map((a) => renderArticleCard(a, relRoot)).join("")}
         </div>
         <div class="ad-slot" data-ad-position="BOTTOM_MULTIPLEX"></div>
       </section>
@@ -334,7 +346,7 @@ function buildCategoryPages() {
     <div class="mag-layout">
       <section>
         <div class="articles-grid" style="grid-template-columns:repeat(2,1fr)">
-          ${catArticles.map((a) => renderArticleCard(a, relRoot)).join("")}
+          ${byNewest(catArticles).map((a) => renderArticleCard(a, relRoot)).join("")}
         </div>
         <div class="ad-slot" data-ad-position="BOTTOM_MULTIPLEX"></div>
       </section>
@@ -417,8 +429,8 @@ function buildArticlePages() {
         (s, idx) => `
         <section id="sec-${idx + 1}">
           ${s.h2 ? `<h2>${s.h2}</h2>` : ""}
-          ${s.paragraphs.map((p) => `<p>${p}</p>`).join("")}
-          ${s.bullets ? `<ul>${s.bullets.map((b) => `<li>${b}</li>`).join("")}</ul>` : ""}
+          ${(s.images || []).map((im) => `<img src="${im.src}" alt="${im.alt}" loading="lazy">`).join("")}${s.paragraphs.map((p) => `<p>${p}</p>`).join("")}
+          ${s.bullets ? `<ul>${s.bullets.map((b) => `<li>${b}</li>`).join("")}</ul>` : ""}${s.ordered ? `<ol>${s.ordered.map((b) => `<li>${b}</li>`).join("")}</ol>` : ""}
           ${s.tip ? `<div class="article-tip-box"><strong>💡 خلاصة تنفيذية:</strong> ${s.tip}</div>` : ""}
           ${idx === 0 ? `<div class="ad-slot" data-ad-position="IN_ARTICLE"></div>` : ""}
         </section>`
