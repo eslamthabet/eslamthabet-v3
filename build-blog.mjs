@@ -391,13 +391,15 @@ function buildArticlePages() {
       ]
     })}</script>`;
 
-    const tocHtml = `
+    const tocHtml = art.sections.some((s) => s.h2)
+      ? `
       <div class="toc-box">
         <strong>فهرس محتويات المقال:</strong>
         <ol>
-          ${art.sections.map((s, idx) => `<li><a href="#sec-${idx + 1}">${s.h2}</a></li>`).join("")}
+          ${art.sections.map((s, idx) => (s.h2 ? `<li><a href="#sec-${idx + 1}">${s.h2}</a></li>` : "")).join("")}
         </ol>
-      </div>`;
+      </div>`
+      : "";
 
     const promptHtml = art.promptText
       ? `
@@ -414,7 +416,7 @@ function buildArticlePages() {
       .map(
         (s, idx) => `
         <section id="sec-${idx + 1}">
-          <h2>${s.h2}</h2>
+          ${s.h2 ? `<h2>${s.h2}</h2>` : ""}
           ${s.paragraphs.map((p) => `<p>${p}</p>`).join("")}
           ${s.bullets ? `<ul>${s.bullets.map((b) => `<li>${b}</li>`).join("")}</ul>` : ""}
           ${s.tip ? `<div class="article-tip-box"><strong>💡 خلاصة تنفيذية:</strong> ${s.tip}</div>` : ""}
