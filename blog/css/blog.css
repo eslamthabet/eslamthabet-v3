@@ -373,3 +373,42 @@
     text-align: center;
   }
 }
+
+/* ===== منع خروج المحتوى خارج الشاشة على الموبايل ===== */
+.article-content,
+.article-content p,
+.article-content li,
+.article-content h2,
+.article-content h3,
+.article-content a,
+.toc-box,
+.toc-box a,
+.sidebar-widget,
+.sidebar-widget a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.article-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 8px auto 20px;
+  border-radius: var(--radius-sm);
+}
+
+.article-content ol {
+  padding-inline-start: 22px;
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--text-secondary);
+}
+
+.article-content pre,
+.prompt-box pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-width: 100%;
+}
