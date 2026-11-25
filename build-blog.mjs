@@ -219,6 +219,7 @@ function baseHead({ title, desc, canonical, relRoot, jsonLd = "" }) {
   <link rel="stylesheet" href="${relRoot}css/styles.css" />
   <link rel="stylesheet" href="${relRoot}blog/css/blog.css" />
   ${jsonLd}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9846032428663106" crossorigin="anonymous"></script>
 </head>`;
 }
 
@@ -669,8 +670,7 @@ function buildCompliancePages() {
 function buildAdsAndSitemap() {
   const adsTxt = `# Google AdSense ads.txt for eslamtgd.top
 # استبدل pub-0000000000000000 برقم الناشر الخاص بك فور تفعيل حساب Google AdSense
-google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
-`;
+google.com, pub-9846032428663106, DIRECT, f08c47fec0942fa0`;
   writeFileEnsured("ads.txt", adsTxt);
 
   const urls = [
