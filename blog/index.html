@@ -57,23 +57,93 @@
   <main class="shell" style="padding-block:42px 72px">
     <div class="ad-slot" data-ad-position="TOP_LEADERBOARD"></div>
 
-    <!-- Featured Hero Article -->
-    <section class="featured-post-banner">
-      <div>
-        <span class="status-pill" style="margin-bottom:12px">✦ مقال مميز · جاهز للتطبيق</span>
-        <h1 style="font-size:clamp(1.6rem,2.8vw,2.35rem);font-weight:900;line-height:1.28;margin-bottom:12px">
-          <a href="prompts/ai-news-november-2026/">أهم أخبار الذكاء الاصطناعي في نوفمبر ٢٠٢٦: المساعدات بدأت تدفع وتنفذ عنك</a>
-        </h1>
-        <p style="color:var(--text-secondary);margin-bottom:20px">الإعلانات الرسمية فقط بدون إثارة: جوجل فتحت وضع المهام مجاناً وأطلقت Neon، OpenAI ردت بـ GPT-6.2 ومحفظة الدفع، وفتحت DeepMind عوالم Genie 4.</p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a href="prompts/ai-news-november-2026/" class="btn btn-primary">اقرأ الدليل وانسخ البرومبت ←</a>
-          <input type="search" id="blog-search-input" placeholder="ابحث في مقالات وأقسام المدونة..." style="padding:11px 18px;border-radius:999px;background:var(--bg-elevated);border:1px solid var(--border-subtle);min-width:250px" />
+    <!-- Featured Latest 5 Articles Slider -->
+    <section class="fp-slider" id="fp-slider" aria-roledescription="carousel" aria-label="أحدث المقالات">
+      <div class="fp-slides">
+        
+        <div class="fp-slide active" aria-hidden="false">
+          <div>
+            <span class="status-pill" style="margin-bottom:12px">✦ أحدث المقالات</span>
+            <h1 style="font-size:clamp(1.6rem,2.8vw,2.35rem);font-weight:900;line-height:1.28;margin-bottom:12px">
+              <a href="tech/ai-news-november-2026/">أهم أخبار الذكاء الاصطناعي في نوفمبر ٢٠٢٦: المساعدات بدأت تدفع وتنفذ عنك</a>
+            </h1>
+            <p class="fp-excerpt" style="color:var(--text-secondary);margin-bottom:20px">الإعلانات الرسمية فقط بدون إثارة: جوجل فتحت وضع المهام مجاناً وأطلقت Neon، OpenAI ردت بـ GPT-6.2 ومحفظة الدفع، وفتحت DeepMind عوالم Genie 4.</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap">
+              <a href="tech/ai-news-november-2026/" class="btn btn-primary">اقرأ المقال كاملاً ←</a>
+            </div>
+          </div>
+          <a href="tech/ai-news-november-2026/" class="featured-post-thumb" tabindex="-1">
+            <img src="/assets/blog/ai-news-november-2026/2.jpg" alt="أهم أخبار الذكاء الاصطناعي في نوفمبر ٢٠٢٦: المساعدات بدأت تدفع وتنفذ عنك" loading="eager" onerror="this.onerror=null;this.src='https://eslamtgd.top/assets/ad-11.jpg'" />
+          </a>
+        </div>
+        <div class="fp-slide" aria-hidden="true">
+          <div>
+            <span class="status-pill" style="margin-bottom:12px">✦ أحدث المقالات</span>
+            <h2 style="font-size:clamp(1.6rem,2.8vw,2.35rem);font-weight:900;line-height:1.28;margin-bottom:12px">
+              <a href="tech/gemini-vs-chatgpt-late-2026/">Gemini ضد ChatGPT في آخر ٢٠٢٦: مقارنة عملية محايدة بعد إصدارات نوفمبر</a>
+            </h2>
+            <p class="fp-excerpt" style="color:var(--text-secondary);margin-bottom:20px">بعد إصدارات نوفمبر المتقاربة، المقارنة الحقيقية مش مين أذكى في العموم، لكن مين أنسب لشغلك أنت تحديداً؛ نتائج اختبار أعمى على ١٠ مهام ونقاط قوة كل منصة بالتفصيل.</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap">
+              <a href="tech/gemini-vs-chatgpt-late-2026/" class="btn btn-primary">اقرأ المقال كاملاً ←</a>
+            </div>
+          </div>
+          <a href="tech/gemini-vs-chatgpt-late-2026/" class="featured-post-thumb" tabindex="-1">
+            <img src="/assets/blog/gemini-vs-chatgpt-late-2026/2.jpg" alt="Gemini ضد ChatGPT في آخر ٢٠٢٦: مقارنة عملية محايدة بعد إصدارات نوفمبر" loading="lazy" onerror="this.onerror=null;this.src='https://eslamtgd.top/assets/ad-11.jpg'" />
+          </a>
+        </div>
+        <div class="fp-slide" aria-hidden="true">
+          <div>
+            <span class="status-pill" style="margin-bottom:12px">✦ أحدث المقالات</span>
+            <h2 style="font-size:clamp(1.6rem,2.8vw,2.35rem);font-weight:900;line-height:1.28;margin-bottom:12px">
+              <a href="courses/free-video-editing-courses-2026/">أفضل كورسات المونتاج المجانية والرخيصة في ٢٠٢٦: اختار أداة واحدة واتقنها</a>
+            </h2>
+            <p class="fp-excerpt" style="color:var(--text-secondary);margin-bottom:20px">المونتير المحترف مش اللي بيعرف ٥ برامج، اللي بيتقن برنامج واحد لعمقه. دليل الكورسات المرتبة حسب الأداة، وفيه مسار رسمي مجاني بالكامل بشهادة معتمدة.</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap">
+              <a href="courses/free-video-editing-courses-2026/" class="btn btn-primary">اقرأ المقال كاملاً ←</a>
+            </div>
+          </div>
+          <a href="courses/free-video-editing-courses-2026/" class="featured-post-thumb" tabindex="-1">
+            <img src="/assets/blog/free-video-editing-courses-2026/2.jpg" alt="أفضل كورسات المونتاج المجانية والرخيصة في ٢٠٢٦: اختار أداة واحدة واتقنها" loading="lazy" onerror="this.onerror=null;this.src='https://eslamtgd.top/assets/work-2.jpg'" />
+          </a>
+        </div>
+        <div class="fp-slide" aria-hidden="true">
+          <div>
+            <span class="status-pill" style="margin-bottom:12px">✦ أحدث المقالات</span>
+            <h2 style="font-size:clamp(1.6rem,2.8vw,2.35rem);font-weight:900;line-height:1.28;margin-bottom:12px">
+              <a href="tech/protect-accounts-security-2026/">إزاي تحمي حساباتك من الاختراق في ٢٠٢٦: الدليل العملي بعد موجة اختراقات الإيميلات والسوشيال</a>
+            </h2>
+            <p class="fp-excerpt" style="color:var(--text-secondary);margin-bottom:20px">المبالغ المسروقة من اختراق الإيميلات وحسابات السوشيال زادت أكتر من ٤٠٠٪ حسب تقارير رسمية؛ الحماية الحقيقية في ٢٠٢٦ اسمها مفاتيح المرور، وهذه خطواتها بالترتيب.</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap">
+              <a href="tech/protect-accounts-security-2026/" class="btn btn-primary">اقرأ المقال كاملاً ←</a>
+            </div>
+          </div>
+          <a href="tech/protect-accounts-security-2026/" class="featured-post-thumb" tabindex="-1">
+            <img src="/assets/blog/protect-accounts-security-2026/2.jpg" alt="إزاي تحمي حساباتك من الاختراق في ٢٠٢٦: الدليل العملي بعد موجة اختراقات الإيميلات والسوشيال" loading="lazy" onerror="this.onerror=null;this.src='https://eslamtgd.top/assets/ad-11.jpg'" />
+          </a>
+        </div>
+        <div class="fp-slide" aria-hidden="true">
+          <div>
+            <span class="status-pill" style="margin-bottom:12px">✦ أحدث المقالات</span>
+            <h2 style="font-size:clamp(1.6rem,2.8vw,2.35rem);font-weight:900;line-height:1.28;margin-bottom:12px">
+              <a href="courses/arabic-youtube-channels-learn-ai-2026/">أفضل قنوات يوتيوب العربية لتعلم الذكاء الاصطناعي مجاناً في ٢٠٢٦</a>
+            </h2>
+            <p class="fp-excerpt" style="color:var(--text-secondary);margin-bottom:20px">الذكاء الاصطناعي مجال تطبيقي بيتتعلم بالمشاهدة والتطبيق مش بالقراءة بس؛ وهذه أقوى القنوات العربية اللي بتشرحه بجودة أكاديمية من غير ما تدفع قرش.</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap">
+              <a href="courses/arabic-youtube-channels-learn-ai-2026/" class="btn btn-primary">اقرأ المقال كاملاً ←</a>
+            </div>
+          </div>
+          <a href="courses/arabic-youtube-channels-learn-ai-2026/" class="featured-post-thumb" tabindex="-1">
+            <img src="/assets/blog/arabic-youtube-channels-learn-ai-2026/2.jpg" alt="أفضل قنوات يوتيوب العربية لتعلم الذكاء الاصطناعي مجاناً في ٢٠٢٦" loading="lazy" onerror="this.onerror=null;this.src='https://eslamtgd.top/assets/work-2.jpg'" />
+          </a>
         </div>
       </div>
-      <a href="prompts/ai-news-november-2026/" class="featured-post-thumb">
-        <img src="/assets/blog/ai-news-november-2026/2.jpg" alt="أهم أخبار الذكاء الاصطناعي في نوفمبر ٢٠٢٦: المساعدات بدأت تدفع وتنفذ عنك" onerror="this.onerror=null;this.src='https://eslamtgd.top/assets/ad-11.jpg'" />
-      </a>
+      <div class="fp-dots">
+        <button type="button" class="fp-dot active" data-fp-dot="0" aria-label="اعرض المقال 1"></button><button type="button" class="fp-dot" data-fp-dot="1" aria-label="اعرض المقال 2"></button><button type="button" class="fp-dot" data-fp-dot="2" aria-label="اعرض المقال 3"></button><button type="button" class="fp-dot" data-fp-dot="3" aria-label="اعرض المقال 4"></button><button type="button" class="fp-dot" data-fp-dot="4" aria-label="اعرض المقال 5"></button>
+      </div>
     </section>
+    <div style="display:flex;justify-content:center;margin-bottom:36px">
+      <input type="search" id="blog-search-input" placeholder="ابحث في مقالات وأقسام المدونة..." style="padding:11px 18px;border-radius:999px;background:var(--bg-elevated);border:1px solid var(--border-subtle);min-width:250px" />
+    </div>
 
     <!-- 6 Standalone Sub-URL Category Portals -->
     <section style="margin-bottom:52px">
