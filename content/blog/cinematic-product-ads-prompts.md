@@ -7,10 +7,10 @@ metaDesc: "احصل على هيكل البرومبت الاحترافي لتول
 date: "2026-11-24"
 dateAr: "٢٤ نوفمبر ٢٠٢٦"
 readTime: "٦ دقائق قراءة"
-image: "https://eslamtgd.top/assets/ad-10.jpg"
 excerpt: "تعلّم المعادلة الهندسية لكتابة برومبت إعلاني يضع أي منتج داخل بيئة سينمائية مبهرة مع ضبط العدسات والإضاءة الخلفية بدقة استوديوهات الإعلانات العالمية."
 promptText: "Commercial hero product photography of [YOUR PRODUCT], resting on wet black basalt stone, dynamic crystal water splash frozen in mid-air, electric cyan and warm amber rim lighting, subtle volumetric studio mist, shot on Arri Alexa Mini LF, 85mm macro lens, f/2.8, sharp label focus, photorealistic luxury campaign, 8k --ar 9:16 --stylize 250"
 ---
+![كاميرا سينمائية بإضاءة دراماتيكية](/eslamthabet-v3/assets/blog/cinematic-product-ads-prompts/1.jpg)
 
 ## لماذا تفشل أغلب البرومبتات العشوائية في إعلانات المنتجات؟
 

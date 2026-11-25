@@ -7,10 +7,10 @@ metaDesc: "الطريقة الاحترافية خطوة بخطوة لبناء و
 date: "2026-11-24"
 dateAr: "٢٤ نوفمبر ٢٠٢٦"
 readTime: "٦ دقائق قراءة"
-image: "https://eslamtgd.top/assets/work-1.jpg"
 excerpt: "وداعاً لتغير وجوه الأبطال من لقطة لأخرى؛ تعلّم أسلوب الاستوديوهات الاحترافية في بناء مرجع بصري ثابت يضمن استمرارية القصة وإقناع المشاهد."
 promptText: "Character turnaround reference sheet of a 35-year-old Arab man with warm expressive eyes, short curly dark hair and neat beard, wearing a minimal charcoal jacket, three angles side-by-side: front view, 45-degree three-quarter view, side profile, neutral soft studio lighting, plain grey background, consistent facial structure, 8k --ar 16:9"
 ---
+![بورتريه احترافي بإضاءة دافئة](/eslamthabet-v3/assets/blog/character-consistency-guide/1.jpg)
 
 ## المشكلة رقم ١ التي تكسر اندماج المشاهد في أفلام الـ AI
 
