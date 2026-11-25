@@ -2,49 +2,114 @@
 title: "برومبتات تصوير المنتجات بالذكاء الاصطناعي: صور استوديو احترافية بدون كاميرا في ٢٠٢٦"
 category: "prompts"
 ---
-تصوير المنتجات كان أكبر تكلفة لأي براند صغير: استوديو، إضاءة، مصور، وتعديل. في ٢٠٢٦ نماذج زي Nano Banana Pro و Midjourney و Flux بتطلع صور منتجات بجودة حملات عالمية في دقائق، بس بشرط: البرومبت يتكتب بلغة التصوير الحقيقي مش بكلام عام. في المقال ده هتاخد صيغة البرومبت الاحترافية وأمثلة جاهزة، وحد أمانة مهم لازم تعرفه قبل ما تنشر.
+تصوير المنتجات كان أكبر تكلفة على أي براند صغير: استوديو بالساعة، إضاءة، مصور، ومونتاج، والصورة الواحدة ممكن توصل لآلاف الجنيهات في الحملة الواحدة. في ٢٠٢٦ المعادلة اتقلبت: نماذج زي Nano Banana Pro من جوجل، Midjourney، Flux، وغيرهم بتطلع صور منتجات بجودة حملات عالمية في أقل من دقيقة للصورة، وبفلوس رمزية جنب تكلفة الاستوديو. بس في فرق ضخم بين صورة "حلوة بالصدفة" وصورة احترافية تتكرر وتنفع للمتجر والإعلانات: الفرق هو طريقة كتابة البرومبت. الدليل ده هيديك صيغة البرومبت الاحترافية المجربة، ٨ برومبتات جاهزة للنسخ، الأخطاء اللي بتبوظ الصور (وإزاي تتجنبها)، ومتطلبات المنصات زي أمازون وشوبيفاي بالأرقام، وفي الآخر حد أمانة مهم لازم تعرفه قبل ما تنشر أي صورة.
 
 
-![تصوير منتج في استوديو بإضاءة سوفت بوكس](/eslamthabet-v3/assets/blog/product-photography-ai-prompts/2.jpg)
+![تصوير منتج داخل صندوق إضاءة سوفت بوكس](/eslamthabet-v3/assets/blog/product-photography-ai-prompts/2.jpg)
 
-## صيغة البرومبت الاحترافية من ٥ أجزاء
+## ليه صورة المنتج هي اللي بتبيع فعلاً؟
 
-أي صورة منتج ناجحة بتتبنى بالترتيب ده: المنتج + البيئة + الإضاءة + العدسة + نسبة الأبعاد. لما تكتب الأجزاء الخمسة بوضوح، النتيجة بتبطل تكون صورة جميلة بالصدفة وتبقى صورة ممكن تتكرر وتتطور.
+قبل البرومبتات، افهم الرهان: المتسوق أونلاين مش بيلمس المنتج، فالصورة هي كل حجته. أمازون نفسها في دليل البائعين بتقول إن صورة المنتج الأساسية لازم تكون على خلفية بيضاء نقية في أغلب الحالات، والمنتج يملى ٨٥٪ أو أكتر من إطار الصورة، والمقاس يفضل أكبر من ١٠٠٠ بكسل في كل جهة عشان خاصية التكبير تشتغل. شوبيفاي بتوصي بصور مربعة ٢٠٤٨ في ٢٠٤٨ بكسل للمتاجر. يعني الصورة اللي هتطلعها لازم تتبني على المواصفات دي من الأول، مش تطلع أي صورة حلوة وبعدين تكتشف إن المنصة رافضاها أو طالعة مهزوزة جنب صور المنافسين.
 
+الخبر الحلو: النماذج الحديثة قادرة توصل للمواصفات دي بثبات، بشرط إن البرومبت يتكتب بلغة التصوير الفوتوغرافي الحقيقية، مش بكلام عام زي "صورة منتج حلوة".
 
-![إعداد استوديو تصوير منتجات بإضاءة احترافية](/eslamthabet-v3/assets/blog/product-photography-ai-prompts/1.jpg)
+## صيغة البرومبت الاحترافية: ٥ أجزاء بالترتيب
 
-## ٦ برومبتات جاهزة للنسخ
+أي صورة منتج ناجحة بتتبنى من ٥ عناصر، والصيغة المجربة هي: **المنتج + السطح + مصدر الإضاءة + التكوين + الستايل**. لما تسمي كل جزء بوضوح، النتيجة بتبطل تكون مصادفة وتبقى صورة تقدر تكررها وتطورها لكتالوج كامل.
 
-> Professional studio product photography of [PRODUCT], centered on a light beige podium, soft diffused lighting from the left, gentle shadow, clean minimal background, shot on 85mm lens, f/8, commercial advertising style, 4:5.
+1. **المنتج:** سمّيه بدقة. "زجاجة سيروم زجاج بني بغطاء قطارة دهبي، ٢٠٠ مل" أقوى بكتير من "زجاجة سكين كير". اذكر الخامة والملمس والحجم لو تعرفهم.
+2. **السطح:** المنتج واقف على إيه أو جنب إيه. "ورق أبيض سلس"، "بلاطة خرسانة رمادي فاتح"، "سطح خشب قديم". اذكره كل مرة، وخليه ثابت عشان الصور تبان كأنها من جلسة تصوير واحدة.
+3. **مصدر الإضاءة:** سمّي المصدر واتجاهه بدل الصفات العامة. "سوفت بوكس واحد منتشر من شمال الكاميرا بزاوية ٤٥ درجة" أو "ضوء شباك من اليمين بظلال ناعمة" أدق بمراحل من "إضاءة حلوة" أو "مود درامي"، وبعدين راجع إن ظلال الصورة فعلاً مطابقة.
+4. **التكوين:** "في المنتصف، زاوية ثلاثة أرباع خفيفة، الملصق واجه الكاميرا" أو "من فوق تماماً، المنتج في منتصف الإطار". قول المنتج واقف فين وأنهي جهة باينة.
+5. **الستايل:** وصف واحد بس: "تصوير منتجات تجاري" أو "إي كوميرس نضيف" أو "إيديتوريال بسيط". وصف واحد، مش تلاتة.
 
-> [PRODUCT] placed on wet dark slate stone, water droplets frozen around it, dramatic backlight with warm rim light, mist in the air, macro detail, luxury cosmetic campaign look, shot on 100mm macro lens, 1:1.
-
-> Flat lay photography of [PRODUCT] surrounded by its natural ingredients on a linen cloth, top-down view, morning window light, soft shadows, editorial food magazine style, 4:5.
-
-> [PRODUCT] floating in mid-air with dynamic fabric silk flying around it, studio lighting with strong contrast, deep blue background, high-end fashion campaign aesthetic, 85mm, f/2.8, 9:16.
-
-> Lifestyle product photo of [PRODUCT] on a wooden breakfast table next to coffee and croissant, warm morning sunlight through a window, shallow depth of field, cozy authentic mood, 50mm lens, 4:5.
-
-> [PRODUCT] on reflective black glass surface, neon gradient lighting in pink and cyan, futuristic tech advertisement style, sharp reflections, dramatic product hero shot, 85mm, 16:9.
-
-## الحد المهم اللي لازم تعرفه
-
-الصورة المتولدة مش صورة لمنتجك الحقيقي: النموذج بيخترع عبوة شبه منتجك، والشعار والتفاصيل الصغيرة غالباً بتطلع غلط. الحل الاحترافي هو إنك تستخدم صورة منتجك الحقيقية كمرجع (Image Reference) أو تركب العبوة الحقيقية على الخلفية المتولدة في Photoshop أو أدوات الدمج. كده بتحصل على إخراج عالمي والمنتج نفسه يفضل حقيقي ١٠٠٪.
+> نصيحة سريعة: نسبة الأبعاد والدقة اضبطهم من إعدادات الأداة مش من جوه البرومبت. 4:5 لانستجرام، 9:16 للريلز وتيك توك، 1:1 للمتاجر.
 
 
-![كاميرا وإضاءة استوديو لتصوير المنتجات](/eslamthabet-v3/assets/blog/product-photography-ai-prompts/3.jpg)
+![زجاجة عطر في لقطة إعلانية مع دخان وإضاءة درامية](/eslamthabet-v3/assets/blog/product-photography-ai-prompts/1.jpg)
 
-## إزاي تخلي النتائج ثابتة على نفس الستايل؟
+## خطوات الشغل الصح من الأول للآخر
 
-1. احفظ البرومبت الناجح في ملف وغيّر فيه اسم المنتج بس.
-2. ثبّت نسبة الأبعاد حسب المنصة: 4:5 للانستجرام، 9:16 للريلز والتيك توك، 1:1 للمتاجر.
-3. استخدم نفس وصف الإضاءة في كل الصور عشان البراند يبقى ليه هوية بصرية.
-4. جرّب أكتر من نموذج: Nano Banana Pro ممتاز في الواقعية والنصوص، و Midjourney أقوى في الستايل الفني.
+1. **صوّر منتجك الحقيقي بموبايلك** صورة واضحة واحدة على الأقل. دي هتبقى صورة المرجع (Image Reference) اللي بتحافظ على شكل منتجك الحقيقي: Nano Banana Pro في Gemini (الموقع الرسمي: [gemini.google.com](https://gemini.google.com)) بيقبل لحد ١٠ صور مرجعية في الطلب الواحد.
+2. **اختار نسبة الأبعاد والدقة** من إعدادات الأداة حسب المنصة المستهدفة قبل التوليد.
+3. **اكتب البرومبت بالصيغة الخماسية** والصق صورة المرجع.
+4. **راجع أول نتيجة بعناية قبل ما تكرر:** النص على الملصق حرف حرف، اتجاه الظل، ولون البراند مطابق للحقيقي ولا لا.
+5. **للكتالوج:** ثبّت وصف السطح والإضاءة حرفياً وغيّر المنتج والتكوين بس، عشان المجموعة كلها تطلع كأنها جلسة تصوير واحدة.
 
-> نصيحة عملية: اطلب دائماً clean background بدون أي نصوص داخل الصورة، وضيف الشعار والكتابة في مرحلة التصميم بعدين. النصوص المتولدة بالذكاء الاصطناعي لسه بتغلط في العربي تحديداً.
+## ٨ برومبتات جاهزة للنسخ
+
+**١. صورة البطل على خلفية بيضاء (للمتجر والإعلانات):**
+
+> Brown glass serum bottle with gold dropper cap, centered on white seamless background, single softbox from camera left at 45 degrees, slight three-quarter angle, label facing camera, commercial product photography.
+
+**٢. صورة لايف ستايل في سياق الاستخدام:**
+
+> Matte white ceramic coffee mug on a light oak kitchen counter, morning light from a window on the right side of frame, scattered coffee beans nearby, steam rising from mug, shallow depth of field, lifestyle product photography.
+
+**٣. ماكرو للتفاصيل والخامات:**
+
+> Close-up of a dark navy canvas sneaker upper, extreme macro, fabric weave visible, white rubber sole edge in lower frame, soft overhead studio lighting, white seamless, product detail photography.
+
+**٤. ترتيب المجموعة (للمجموعات والباكدجات):**
+
+> Modular skincare set, three glass bottles and one pump arranged in an exploded flat-lay pattern, equal spacing, white background, direct overhead lighting, symmetrical composition, clean ecommerce product photography.
+
+**٥. مقارنة جنب لجنب (للمقاسات والألوان):**
+
+> Two matte black water bottles side by side, one 500ml and one 750ml, white seamless background, even front-facing studio lighting, both labels forward, slight height difference visible, commercial product photography.
+
+**٦. فلات لاي من فوق:**
+
+> Olive oil bottle, sprig of rosemary, and a small ceramic bowl with olive oil, arranged in a flat-lay composition on a linen-textured white surface, directly overhead camera angle, soft diffused window light, food and lifestyle photography.
+
+**٧. موسمي (للأعياد والمناسبات):**
+
+> Dark green gift box with gold ribbon, placed on a frosted white surface with soft bokeh holiday lights in the background, warm amber fill light from below, festive product photography, slight low-angle composition.
+
+**٨. مونوكروم استوديو (للمنتجات المعدنية والتقنية):**
+
+> Silver stainless steel insulated tumbler on a pale grey concrete surface, grey seamless background, high-key studio lighting, minimal shadows, monochromatic color scheme, commercial product photography.
+
+## الأخطاء الأربعة اللي بتبوظ صور المنتجات المتولدة
+
+**١. نص الملصق والتشوه على الأسطح المنحنية.** الملصق اللي ملفوف على زجاجة أسطوانية ممكن يطلع مضغوط أو ممطوط، والكلمات عليه تتغير. راجع الملصق في كل نتيجة حرف حرف. لو الكتابة لازم تطلع مظبوطة ١٠٠٪، الحل الاحترافي: ولّد الصورة بملصق بسيط واجه الكاميرا، وركّب الملصق الحقيقي في مرحلة المونتاج.
+
+**٢. الأيدي.** أي برومبت فيه إيد ماسكة المنتج ممكن يرجع بمشاكل الأيدي المعروفة: عدد صوابع غلط أو قبضة مش طبيعية. راجع الصوابع أول حاجة، والأفضل تستغنى عن الأيدي أو تستخدم صورة حقيقية لإيد ماسكة المنتج كمرجع.
+
+**٣. الانعكاسات على الأسطح اللامعة.** البلاستيك الشفاف والجلد اللامع بيطلع عليهم انعكاسات مشوها. اكتب في البرومبت صراحة "diffused studio light, soft box, no harsh specular"، ولو الانعكاس لسه محروق، غيّر وصف الإضاءة الأول قبل أي حاجة تانية.
+
+**٤. انحراف ألوان البراند.** متعتمدش إن اسم لون أو كود هيكس في البرومبت هيطلع مطابق. قارن النتيجة بعينة اللون الحقيقية، وظبط اللون في مرحلة التدريج اللوني بعدين.
+
+## الحد المهم في الأمانة اللي لازم تعرفه
+
+الصورة المتولدة من غير مرجع مش صورة لمنتجك الحقيقي: النموذج بيخترع عبوة شبه منتجك، والشعار والتفاصيل الصغيرة غالباً بتطلع غلط. استخدام صورة متخيلة لمنتج مش موجود في صفحة بيع حقيقية ممكن يعتبر تضليل للمشتري ويخالف سياسات المنصات. الحل الصح: صورة منتجك الحقيقية كمرجع زي ما شرحنا فوق، أو تركيب العبوة الحقيقية على الخلفية المتولدة. كده بتحصل على إخراج عالمي والمنتج نفسه يفضل حقيقي ١٠٠٪.
+
+
+![زجاجة عطر على صخور بإضاءة دراماتيكية](/eslamthabet-v3/assets/blog/product-photography-ai-prompts/3.jpg)
+
+## إزاي تخلي كل صور البراند على نفس الستايل؟
+
+1. احفظ البرومبت الناجح في ملف، وغيّر فيه اسم المنتج ووصفه بس.
+2. ثبّت وصف السطح والإضاءة حرفياً في كل الصور، دي هوية البراند البصرية.
+3. ثبّت نسبة الأبعاد حسب المنصة من إعدادات الأداة.
+4. جرّب أكتر من نموذج على نفس البرومبت قبل ما تستقر: Nano Banana Pro ممتاز في الواقعية والتفاصيل، Midjourney (الموقع الرسمي: [midjourney.com](https://www.midjourney.com)) أقوى في الستايل الفني والحملات، وأما Flux فهو خيار أرخص للتجارب الأولى.
+
+## أسئلة بتتسأل كتير
+
+**هل الصور المتولدة تنفع لأمازون وشوبيفاي رسمياً؟** المواصفات المطلوبة (خلفية بيضاء نقية، المنتج ٨٥٪ من الإطار، أبعاد كافية) ممكن تتحقق بالتوليد، بس "خلفية بيضاء" في البرومبت مش ضمان إن الأبيض يطلع نقي ١٠٠٪. راجع قيم البكسل، أو اقصى المنتج وحطه على أبيض نقي في المونتاج.
+
+**أنهي دقة أختار؟** راجع متطلبات منصتك الأول. شوبيفاي بتوصي بمربع ٢٠٤٨ بكسل، وأمازون بتفضل أكبر من ١٠٠٠ بكسل في الجهة عشان الزوم. لو في خيار دقة أعلى بنفس التكلفة خدها.
+
+**النص على الملصق بيطلع صح؟** مش مضمون، راجعه حرف حرف في كل نتيجة. لو الكتابة لازم تكون مظبوطة، ركّب الملصق الحقيقي في المونتاج.
+
+**إزاي أحافظ على نفس المنتج في صور كتير؟** ثبّت وصف المنتج والسطح والإضاءة وغيّر التكوين بس، والأقوى: استخدم صورة منتجك الحقيقية كمرجع في كل توليد.
+
+**أقدر أستخدم الصور تجارياً؟** الأدوات الكبرى بتسمح بالاستخدام التجاري للصور المتولدة في خططها المدفوعة، بس راجع شروط الأداة اللي بتستخدمها لأن السياسات بتتحدث، وفكر في نقطة الأمانة اللي فوق: صفحة البيع لازم تعرض المنتج الحقيقي.
 
 ## المصادر
 
-- [Memons: 26 Nano Banana Prompts for Product Photography 2026](https://memons.ai)
-- [Promptsio: AI Product Photography Prompts for Midjourney](https://promptsio.com)
+- [8frame: Nano Banana Pro Prompts for Product Photography — الصيغة والأمثلة والأسعار](https://www.8frame.co/blog/nano-banana-pro-prompts-for-product-photography)
+- [Google Gemini — توليد الصور بـ Nano Banana Pro](https://gemini.google.com)
+- [Midjourney — الموقع الرسمي](https://www.midjourney.com)
+- [Shopify Help Center: مواصفات صور المنتجات](https://help.shopify.com)
+- [Amazon Seller Central: إرشادات صور المنتجات](https://sell.amazon.com)

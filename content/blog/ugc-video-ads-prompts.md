@@ -1,54 +1,70 @@
 ---
-title: "برومبتات إعلانات UGC بالذكاء الاصطناعي: إعلانات تبدو حقيقية وتبيع فعلاً في ٢٠٢٦"
+title: "برومبتات إعلانات UGC بالذكاء الاصطناعي في ٢٠٢٦: الدليل الكامل لإعلانات تبدو حقيقية وتبيع فعلاً"
 category: "prompts"
 ---
-إعلانات الـ UGC (المحتوى اللي شكله مصنوع من مستخدم حقيقي) بقت أقوى نوع إعلانات على السوشيال ميديا، لأن الناس بطلت تثق في الإعلان المصقول زيادة عن اللزوم. في ٢٠٢٦ بقى ممكن تنتج إعلان UGC كامل بالذكاء الاصطناعي: شخص يتكلم قدام الكاميرا، بصوت طبيعي، وبحركة شفاه مظبوطة. في المقال ده هتتعلم إزاي تكتب برومبتات UGC مقنعة، وإيه الأدوات اللي بتنفذها فعلاً.
+إعلانات UGC (محتوى شكله مصنوع من مستخدم حقيقي مش من براند) بقت أقوى صيغة إعلانية على السوشيال ميديا، لأن الناس بطلت تثق في الإعلان المصقول زيادة عن اللزوم. المشكلة إن إنتاج UGC حقيقي مكلف وبطيء: تلاقي مؤثر مناسب، تبعتله المنتج، تستنى التصوير، وتدفع لكل فيديو. في ٢٠٢٦ بقى ممكن تنتج إعلان UGC كامل بالذكاء الاصطناعي: شخصية مقنعة، صوت طبيعي، وسيناريو مكتوب صح، في ساعات بدل أسابيع. بس النتيجة بتفرق جداً حسب طريقة الشغل، وأغلب الناس بتغلط في نفس النقط. الدليل ده هيمشي معاك خطوة خطوة: السيناريو، الشخصية، الصوت، البرومبتات الجاهزة، واختبار الهوك، وحدود الأمانة المهمة.
 
 
-![صانعة محتوى بتصور فيديو UGC في بيتها](/eslamthabet-v3/assets/blog/ugc-video-ads-prompts/1.jpg)
+![موبايل على ترايبود بإضاءة حلقية يصور منتجات وكراتين](/eslamthabet-v3/assets/blog/ugc-video-ads-prompts/1.jpg)
 
-## ليه إعلانات UGC بتكسب؟
+## ليه UGC بينافس الإعلانات الاحترافية ويكسب؟
 
-المشاهد وهو بيتصفح بيقف لما يحس إن اللي قدامه شخص زيه بيتكلم بصدق، مش إعلان مدفوع. عشان كده أدوات زي Arcads و HeyGen بنت كل شغلها على فكرة "ممثل افتراضي مقنع": HeyGen مثلاً بتوفر أفاتارز بأكثر من ١٧٥ لغة، و Arcads متخصصة في إعلانات الأداء اللي بتختبر عشرات النسخ من أول ٣ ثواني (الـ Hook) بسرعة. السر مش في الأداة، السر في البرومبت اللي بيخلي الأداء طبيعي مش آلي.
+السبب نفسي بسيط: المتصفح بيتجاهل أي حاجة شكلها إعلان في أول ثانيتين، بس بيقف عند حد بيتكلم طبيعي كأنه صاحبه بيرشحله حاجة. الإعلان الاستوديو بيقول "أنا إعلان" من أول فريم، أما UGC بيدخل من باب الثقة. عشان كده أكبر البراندات بقت بتدفع لمبدعي UGC آلاف الدولارات للفيديو الواحد. الذكاء الاصطناعي دخل المعادلة هنا: هل ممكن تطلع نفس الإحساس الحقيقي من غير تكلفة الإنتاج؟ الإجابة أيوه، بشرط إنك تفهم إن السر مش في الأداة، السر في السيناريو والتفاصيل الصغيرة اللي بتخلي الفيديو "مصدق".
 
-## قواعد البرومبت الذهبية لإعلان UGC
+## خط إنتاج إعلان UGC بالذكاء الاصطناعي (٥ خطوات)
 
-- اكتب المشهد كأنه موبايل مش كاميرا سينما: إضاءة بيت عادية، خلفية حقيقية (مطبخ، عربية، مكتب)، وزاوية سيلفي بسيطة.
-- حدد الحالة النفسية للمتحدث: متحمس، متردد، متفاجئ بصراحة. الجملة دي بتغير الأداء كلياً.
-- اكتب الحوار عامية وقصير: جمل من ٥ لـ ٨ كلمات، وبلاش مصطلحات تسويقية جوه كلام الشخص.
-- اطلب حركة يد طبيعية أو التقاط المنتج في نص الكلام، ده أكثر حاجة بتدي إحساس الواقعية.
-- حدد مدة اللقطة: أغلب الأدوات بتشتغل بمقاطع من ٤ لـ ١٥ ثانية، فخلي كل برومبت لفكرة واحدة.
+1. **السيناريو أولاً:** اكتب سكريبت ٢٠-٣٠ ثانية بالعامية اللي جمهورك بيتكلمها. القاعدة: هوك في أول ٣ ثواني، مشكلة، تجربة شخصية، نتيجة، ودعوة بسيطة.
+2. **الشخصية:** تولد ممثل افتراضي بأداة زي HeyGen (الموقع الرسمي: [heygen.com](https://www.heygen.com)) اللي عندها أفاتارات UGC جاهزة بتتكلم بأكتر من ١٧٥ لغة ولهجة، أو Arcads (الموقع الرسمي: [arcads.ai](https://www.arcads.ai)) المتخصصة أصلاً في إعلانات UGC بالذكاء الاصطناعي.
+3. **الصوت:** صوت طبيعي فيه تنهيدة ووقفة وضحكة خفيفة، مش قراءة نص. اضبط السرعة والنبرة لحد ما تحس إنه "صاحبك بيحكي".
+4. **المونتاج:** لقطات B-roll للمنتج، ترجمة نصية على الشاشة (٨٥٪ بيتفرجوا بدون صوت)، وموسيقى خفيفة.
+5. **الاختبار:** اعمل ٣-٥ نسخ بنفس الفيديو بس هوك مختلف، وانشرهم بميزانية صغيرة. النسخة اللي بتكسب هي اللي تكبرها. دي أقوى ميزة للـ AI هنا: اختبار ٥ هوكات بيكلفك ساعات مش أسابيع.
 
-## ٥ برومبتات جاهزة للنسخ
+## ٦ برومبتات جاهزة للنسخ
 
-غيّر ما بين الأقواس المربعة بمنتجك وجمهورك:
+**برومبت السيناريو (لـ ChatGPT أو Claude):**
 
-> A casual selfie-style UGC video of a young Egyptian woman in her kitchen, holding [PRODUCT], speaking excitedly to the camera in a genuine unscripted tone: "I honestly didn't expect this to work, but look at this". Natural daylight from a window, handheld phone camera, 9:16.
+> اكتب سكريبت إعلان UGC مدته ٢٥ ثانية لمنتج [المنتج] موجه لـ [الجمهور]. ابدأ بهوك يكسر التوقع، اذكر مشكلة حقيقية بيعاني منها الجمهور، احكي تجربة شخصية بضمير المتكلم، اذكر نتيجة محددة بأرقام، واختم بدعوة بسيطة غير بيعية. اكتبها بالعامية المصرية، جمل قصيرة زي الكلام الطبيعي، ومن غير أي كلمة إعلانية مثل "عرض" أو "خصم".
 
-> A man in his car parking lot, holding [PRODUCT] close to the lens, whispering like sharing a secret: "Nobody is talking about this, but it saved me hours every week". Slight camera shake, authentic UGC style, vertical video.
+**برومبت الشخصية والمشهد (لمولد الفيديو):**
 
-> POV unboxing video: hands opening [PRODUCT] package on a wooden desk, quick natural movements, voiceover saying "Finally arrived, let's see if it's worth the hype", warm indoor lighting, phone footage look.
+> UGC-style selfie video of a young woman in her kitchen, holding [PRODUCT] close to the camera, natural window light, slightly shaky handheld phone footage, genuine excited expression, talking directly to the camera as if recommending to a friend, cluttered realistic background, vertical 9:16, no studio lighting, no makeup-heavy look.
 
-> A split-feel testimonial shot: a freelancer at a home office desk, looking tired then relieved while showing [PRODUCT] on screen, saying "I was skeptical for months. One week with this changed my workflow", natural room light, authentic micro-expressions.
+**برومبت البودكاست/الريفيو الواقعي:**
 
-> Street-style UGC: a creator walking outdoors holding [PRODUCT], talking to the camera while moving: "Three things I love about this, number one...", natural ambient sound feel, vertical 9:16, realistic motion.
+> Realistic podcast-style clip of a man in a car, daytime, talking passionately about how [PRODUCT] changed his routine, dashboard phone holder POV, natural sunlight, authentic UGC ad aesthetic, casual tone, vertical video.
+
+**برومبت فتح العلبة:**
+
+> Unboxing UGC video, hands opening [PRODUCT] packaging on a bed with warm morning light, genuine reaction voiceover, close-up shots of product details, cozy bedroom background, shot on phone, vertical 9:16.
+
+**برومبت "قبل وبعد":**
+
+> Split-screen UGC testimonial video: left side frustrated person dealing with [PROBLEM], right side same person relieved using [PRODUCT], home setting, natural lighting, authentic non-polished look, vertical format.
+
+**برومبت الهوك البصري:**
+
+> First 3 seconds of a UGC ad: extreme close-up of [PRODUCT] with bold on-screen text "محدش بيقولك ده عن..." slightly zoomed-in phone footage, pattern-interrupt framing, authentic feel.
 
 
-![كرياتور بيسجل فيديو إعلاني بمعدات بسيطة](/eslamthabet-v3/assets/blog/ugc-video-ads-prompts/2.jpg)
+![هاتف على ترايبود في الهواء الطلق](/eslamthabet-v3/assets/blog/ugc-video-ads-prompts/2.jpg)
 
-## أخطاء بتكشف إن الإعلان مصنوع بالذكاء الاصطناعي
+## أهم ٤ أخطاء بتكشف إن الفيديو صناعي
 
-1. الإضاءة المثالية زيادة: الاستوديو look بيقتل إحساس الـ UGC فوراً.
-2. الحوار الطويل المنمق: محدش بيتكلم كده في الحقيقة.
-3. الثبات المبالغ فيه للكاميرا: اطلب handheld أو slight shake.
-4. عدم ذكر تفصيلة حقيقية عن المنتج: كلمة واحدة محددة (لون، حجم، استخدام) بتبني ثقة أكتر من عشر صفات عامة.
+1. **الإضاءة المثالية:** UGC الحقيقي إضاءته عادية. اطلب صراحة "no studio lighting, natural window light".
+2. **الثبات المبالغ فيه:** الفيديو الحقيقي بيهتز شوية. "slightly shaky handheld footage" بيفرق جداً.
+3. **السكريبت الإعلاني:** أي جملة زي "المنتج الأفضل في السوق" بتقتل المصداقية فوراً. الكلام لازم يبقى تجربة شخصية.
+4. **نسخة واحدة بس:** قوة AI في الكم. ٥ نسخ بهوكات مختلفة أرخص وأقوى من نسخة "مثالية" واحدة.
 
-> نصيحة عملية: اختبر ٣ نسخ مختلفة من أول ٣ ثواني بس قبل ما تنتج الإعلان كامل. الـ Hook هو اللي بيحدد ٨٠٪ من نجاح الإعلان، وأدوات زي Arcads معمولة أصلاً عشان الاختبار السريع ده.
+## حد الأمانة اللي ممنوع تعديه
 
+المنصات الكبرى (تيك توك وميتا ويوتيوب) بقت بتطلب الإفصاح عن المحتوى المتولد بالذكاء الاصطناعي، وأغلبها عنده خيار رسمي للإفصاح وقت النشر. استخدمه. كمان متعملش أفاتار لشخص حقيقي موجود من غير إذنه، ومتدعيش نتائج طبية أو مالية مش حقيقية. الإعلان الذكي بيكسب ثقة، والإعلان المخادع بيكسب حظر.
 
-![كاميرا أثناء تصوير محتوى فيديو](/eslamthabet-v3/assets/blog/ugc-video-ads-prompts/3.jpg)
+![ترايبود صغير للهاتف على رف خشبي](/eslamthabet-v3/assets/blog/ugc-video-ads-prompts/3.jpg)
 
-## المصادر
+## أسئلة بتتسأل كتير
 
-- [HeyGen: Best AI Avatar Tools for UGC Ads 2026](https://heygen.com/blog/best-ai-avatar-tools-ugc-ads)
-- [Arcads: Best AI Video Ad Generators in 2026](https://arcads.ai)
+**هل إعلانات UGC بالذكاء الاصطناعي فعلاً بتحقق مبيعات؟** أيوه، وشركات زي Arcads مبنية على ده بالكامل، بس النتيجة بتعتمد على السيناريو والاختبار مش على الأداة. **التكلفة قد إيه؟** أدوات الأفاتار بتبدأ من خطط شهرية في حدود عشرات الدولارات، أرخص بكتير من فيديو UGC حقيقي واحد. **هل ينفع بالعربي؟** أيوه، HeyGen بتدعم العربي بلهجات متعددة، والجودة اتحسنت جداً في ٢٠٢٦. **أبدأ منين بميزانية صفر؟** اكتب ٥ سيناريوهات بالبرومبت الأول، وجربهم على أي أداة أفاتار بخطة مجانية، وقارن بنفسك. **هل لازم أظهر منتجي الحقيقي في الفيديو؟** الأفضل أيوه: صور منتجك الحقيقي كمرجع أو لقطات B-roll حقيقية بتزود المصداقية جداً.
+
+## الخلاصة
+
+إعلان UGC الناجح = سيناريو بشري + تفاصيل واقعية + اختبار هوكات بالكم. الأدوات جاهزة والتكلفة نزلت، واللي بيفرق دلوقتي هو فهمك لجمهورك. المصادر: مركز مساعدة Arcads (أكتوبر ٢٠٢٦)، الصفحات الرسمية لـ HeyGen، وتقارير أداء إعلانات UGC المنشورة في ٢٠٢٦.
