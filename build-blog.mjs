@@ -244,23 +244,33 @@ function buildBlogHome() {
   <main class="shell" style="padding-block:42px 72px">
     <div class="ad-slot" data-ad-position="TOP_LEADERBOARD"></div>
 
-    <!-- Featured Hero Article -->
-    <section class="featured-post-banner">
-      <div>
-        <span class="status-pill" style="margin-bottom:12px">✦ مقال مميز · جاهز للتطبيق</span>
-        <h1 style="font-size:clamp(1.6rem,2.8vw,2.35rem);font-weight:900;line-height:1.28;margin-bottom:12px">
-          <a href="prompts/${featured.slug}/">${featured.title}</a>
-        </h1>
-        <p style="color:var(--text-secondary);margin-bottom:20px">${featured.excerpt}</p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a href="prompts/${featured.slug}/" class="btn btn-primary">اقرأ الدليل وانسخ البرومبت ←</a>
-          <input type="search" id="blog-search-input" placeholder="ابحث في مقالات وأقسام المدونة..." style="padding:11px 18px;border-radius:999px;background:var(--bg-elevated);border:1px solid var(--border-subtle);min-width:250px" />
-        </div>
+    <!-- Featured Latest 5 Articles Slider -->
+    <section class="fp-slider" id="fp-slider" aria-roledescription="carousel" aria-label="أحدث المقالات">
+      <div class="fp-slides">
+        ${byNewest(ARTICLES).slice(0, 5).map((a, idx) => `
+        <div class="fp-slide${idx === 0 ? " active" : ""}" aria-hidden="${idx === 0 ? "false" : "true"}">
+          <div>
+            <span class="status-pill" style="margin-bottom:12px">✦ أحدث المقالات</span>
+            <${idx === 0 ? "h1" : "h2"} style="font-size:clamp(1.6rem,2.8vw,2.35rem);font-weight:900;line-height:1.28;margin-bottom:12px">
+              <a href="${a.category}/${a.slug}/">${a.title}</a>
+            </${idx === 0 ? "h1" : "h2"}>
+            <p class="fp-excerpt" style="color:var(--text-secondary);margin-bottom:20px">${a.excerpt}</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap">
+              <a href="${a.category}/${a.slug}/" class="btn btn-primary">اقرأ المقال كاملاً ←</a>
+            </div>
+          </div>
+          <a href="${a.category}/${a.slug}/" class="featured-post-thumb" tabindex="-1">
+            <img src="${a.image}" alt="${a.title}" loading="${idx === 0 ? "eager" : "lazy"}" onerror="this.onerror=null;this.src='${a.imageFallback}'" />
+          </a>
+        </div>`).join("")}
       </div>
-      <a href="prompts/${featured.slug}/" class="featured-post-thumb">
-        <img src="${featured.image}" alt="${featured.title}" onerror="this.onerror=null;this.src='${featured.imageFallback}'" />
-      </a>
+      <div class="fp-dots">
+        ${byNewest(ARTICLES).slice(0, 5).map((_, idx) => `<button type="button" class="fp-dot${idx === 0 ? " active" : ""}" data-fp-dot="${idx}" aria-label="اعرض المقال ${idx + 1}"></button>`).join("")}
+      </div>
     </section>
+    <div style="display:flex;justify-content:center;margin-bottom:36px">
+      <input type="search" id="blog-search-input" placeholder="ابحث في مقالات وأقسام المدونة..." style="padding:11px 18px;border-radius:999px;background:var(--bg-elevated);border:1px solid var(--border-subtle);min-width:250px" />
+    </div>
 
     <!-- 6 Standalone Sub-URL Category Portals -->
     <section style="margin-bottom:52px">
