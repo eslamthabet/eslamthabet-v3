@@ -181,7 +181,7 @@ function renderArticleCard(a, relRoot) {
   return `
   <article class="article-card" data-article-card>
     <a href="${relRoot}blog/${a.category}/${a.slug}/" class="article-thumb">
-      <img src="${a.image}" alt="${a.title}" loading="lazy" />
+      <img src="${a.image}" alt="${a.title}" loading="lazy" onerror="this.onerror=null;this.src='${a.imageFallback}'" />
     </a>
     <div class="article-body">
       <div class="article-meta">
@@ -257,7 +257,7 @@ function buildBlogHome() {
         </div>
       </div>
       <a href="prompts/${featured.slug}/" class="featured-post-thumb">
-        <img src="${featured.image}" alt="${featured.title}" />
+        <img src="${featured.image}" alt="${featured.title}" onerror="this.onerror=null;this.src='${featured.imageFallback}'" />
       </a>
     </section>
 
@@ -429,7 +429,7 @@ function buildArticlePages() {
         (s, idx) => `
         <section id="sec-${idx + 1}">
           ${s.h2 ? `<h2>${s.h2}</h2>` : ""}
-          ${(s.images || []).map((im) => `<img src="${im.src}" alt="${im.alt}" loading="lazy">`).join("")}${s.paragraphs.map((p) => `<p>${p}</p>`).join("")}
+          ${(s.images || []).map((im) => `<img src="${im.src}" alt="${im.alt}" loading="lazy" onerror="this.remove()">`).join("")}${s.paragraphs.map((p) => `<p>${p}</p>`).join("")}
           ${s.bullets ? `<ul>${s.bullets.map((b) => `<li>${b}</li>`).join("")}</ul>` : ""}${s.ordered ? `<ol>${s.ordered.map((b) => `<li>${b}</li>`).join("")}</ol>` : ""}
           ${s.tip ? `<div class="article-tip-box"><strong>💡 خلاصة تنفيذية:</strong> ${s.tip}</div>` : ""}
           ${idx === 0 ? `<div class="ad-slot" data-ad-position="IN_ARTICLE"></div>` : ""}
@@ -469,7 +469,7 @@ function buildArticlePages() {
         <p style="font-size:1.08rem;color:var(--text-secondary)">${art.excerpt}</p>
 
         <div class="article-hero-img">
-          <img src="${art.image}" alt="${art.title}" fetchpriority="high" />
+          <img src="${art.image}" alt="${art.title}" fetchpriority="high" onerror="this.onerror=null;this.src='${art.imageFallback}'" />
         </div>
 
         ${tocHtml}
