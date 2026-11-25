@@ -48,7 +48,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 2000);
   });
 
-  // 5. Smart Google AdSense Loader & Owner Preview Mode (?preview_ads=1)
+  // 5. Featured Latest-5 Slider (auto-rotate 4s, pause on hover/touch, dots)
+  initFeaturedSlider();
+
+  // 6. Smart Google AdSense Loader & Owner Preview Mode (?preview_ads=1)
   initAdSenseSlots();
 });
 
@@ -102,4 +105,43 @@ function initAdSenseSlots() {
       `;
     });
   }
+}
+
+function initFeaturedSlider() {
+  const slider = document.getElementById("fp-slider");
+  if (!slider) return;
+  const slides = [...slider.querySelectorAll(".fp-slide")];
+  const dots = [...slider.querySelectorAll(".fp-dot")];
+  if (slides.length < 2) return;
+  let current = 0;
+  let timer = null;
+  function go(n) {
+    current = (n + slides.length) % slides.length;
+    slides.forEach((sl, k) => {
+      sl.classList.toggle("active", k === current);
+      sl.setAttribute("aria-hidden", k === current ? "false" : "true");
+    });
+    dots.forEach((d, k) => d.classList.toggle("active", k === current));
+  }
+  function start() {
+    stop();
+    timer = setInterval(() => go(current + 1), 4000);
+  }
+  function stop() {
+    if (timer) clearInterval(timer);
+    timer = null;
+  }
+  let hovering = false;
+  slider.addEventListener("mouseenter", () => { hovering = true; stop(); });
+  slider.addEventListener("mouseleave", () => { hovering = false; start(); });
+  slider.addEventListener("touchstart", stop, { passive: true });
+  slider.addEventListener("touchend", () => setTimeout(() => { if (!hovering) start(); }, 2500), { passive: true });
+  dots.forEach((d) => {
+    d.addEventListener("click", () => {
+      go(Number(d.getAttribute("data-fp-dot")));
+      stop();
+      if (!hovering) start();
+    });
+  });
+  start();
 }
