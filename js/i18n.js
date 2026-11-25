@@ -1,9 +1,9 @@
 // Complete Bilingual Localization Dictionary (Arabic RTL & English LTR)
 export const I18N = {
   ar: {
-    metaTitle: "إسلام ثابت | مخرج وصانع أفلام وإعلانات بالذكاء الاصطناعي — eslamtgd",
-    metaDesc: "إسلام ثابت (@eslamtgd) — مخرج إبداعي وصانع فيديوهات وإعلانات سينمائية بالذكاء الاصطناعي. إعلانات منتجات، AI UGC، وأفلام قصيرة للعلامات التجارية في مصر والخليج.",
-    brandRole: "مخرج فيديو بالذكاء الاصطناعي",
+    metaTitle: "إسلام ثابت | صانع محتوى بالذكاء الاصطناعي — eslamtgd",
+    metaDesc: "إسلام ثابت (@eslamtgd) — صانع محتوى بالذكاء الاصطناعي. إعلانات منتجات، AI UGC، وأفلام قصيرة للعلامات التجارية في مصر والخليج.",
+    brandRole: "صانع محتوى بالذكاء الاصطناعي",
     navWork: "الأعمال",
     navCampaigns: "الإعلانات",
     navServices: "الخدمات",
@@ -179,7 +179,7 @@ export const I18N = {
     whatsappDefaultMsg: "أهلاً يا إسلام، شفت موقعك الجديد وحابب أتكلم معاك عن إنتاج فيديو بالذكاء الاصطناعي لمشروعي.",
     socialHeading: "تابع أحدث الأعمال والكواليس (+188K متابع)",
     socialNote: "الأرقام المعروضة تقريبية كما تظهر على المنصات الرسمية · تحديث نوفمبر ٢٠٢٦",
-    footerTagline: "إسلام ثابت · مخرج وصانع محتوى سينمائي بالذكاء الاصطناعي",
+    footerTagline: "إسلام ثابت · صانع محتوى بالذكاء الاصطناعي",
     footerRights: "جميع الحقوق محفوظة © ٢٠٢٦ eslamtgd.top",
     backToTop: "العودة للأعلى ↑",
     themeToggleLabel: "تبديل الإضاءة",
@@ -193,9 +193,9 @@ export const I18N = {
   },
 
   en: {
-    metaTitle: "Eslam Thabet | AI Film Director & Commercial Studio — eslamtgd",
-    metaDesc: "Eslam Thabet (@eslamtgd) — AI Film Director & Creative Technologist crafting scroll-stopping product commercials, AI UGC ads, and cinematic stories for global & MENA brands.",
-    brandRole: "AI FILM & AD DIRECTOR",
+    metaTitle: "Eslam Thabet | AI Content Creator — eslamtgd",
+    metaDesc: "Eslam Thabet (@eslamtgd) — AI Content Creator crafting scroll-stopping product commercials, AI UGC ads, and cinematic stories for global & MENA brands.",
+    brandRole: "AI CONTENT CREATOR",
     navWork: "Selected Work",
     navCampaigns: "Campaigns",
     navServices: "Capabilities",
@@ -236,7 +236,7 @@ export const I18N = {
     // Ticker
     tickerItems: [
       "YOUR NEXT STORY, REIMAGINED",
-      "AI-POWERED · DIRECTOR-LED · RESULTS-DRIVEN",
+      "AI-POWERED · CREATOR-LED · RESULTS-DRIVEN",
       "PRODUCT COMMERCIALS · AI UGC · SHORT FILMS",
       "CINEMA PRODUCTION WITHOUT PHYSICAL LIMITS"
     ],
@@ -371,7 +371,7 @@ export const I18N = {
     whatsappDefaultMsg: "Hi Eslam! I just explored your portfolio and would love to discuss an AI video project for my brand.",
     socialHeading: "Follow the Journey & Latest Reels (188K+ Community)",
     socialNote: "Public follower counts rounded as shown on platforms · Updated Nov 2026",
-    footerTagline: "Eslam Thabet · AI Film Director & Creative Technologist",
+    footerTagline: "Eslam Thabet · AI Content Creator",
     footerRights: "All rights reserved © 2026 eslamtgd.top",
     backToTop: "Back to top ↑",
     themeToggleLabel: "Toggle Theme",
