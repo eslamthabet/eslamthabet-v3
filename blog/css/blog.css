@@ -121,6 +121,42 @@
 }
 
 /* Featured Hero Post on /blog/ */
+
+/* Featured Latest-5 Slider */
+.fp-slider { position: relative; margin-bottom: 20px; }
+.fp-slides { display: grid; }
+.fp-slide {
+  grid-area: 1 / 1;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 28px;
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border-strong);
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.55s ease, visibility 0.55s;
+}
+.fp-slide.active { opacity: 1; visibility: visible; pointer-events: auto; }
+.fp-excerpt {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.fp-dots { display: flex; gap: 8px; justify-content: center; margin-top: 14px; }
+.fp-dot {
+  width: 9px; height: 9px; border-radius: 999px; border: 0; padding: 0;
+  background: var(--border-strong); cursor: pointer; transition: all 0.25s;
+}
+.fp-dot.active { width: 24px; background: var(--accent); }
+@media (max-width: 1040px) {
+  .fp-slide { grid-template-columns: 1fr; }
+}
+
 .featured-post-banner {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
